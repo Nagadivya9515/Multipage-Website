@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Root Webapp</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <div class="header">
+        <div class="left-logo">
+            <img src="../techdialog-3.jpg" alt="" id="logo" />
+        </div>
+        <div class="right-titles">
+            <ul>
+                <li id="home"><a href="../index.html">Home</a></li>
+                <li id="clock"><a href="./digitalclock.html">Clock</a></li>
+                <li id="timer"><a href="./timer.html">Timer</a></li>
+                <li id="pomodoro"><a href="./pomodor.html">Pomodoro</a></li>
+                <li id="timeline"><a href="./timeline.html">Timeline</a></li>
+            </ul>
+        </div>
+        <a href="./login.html">
+        <button id="login" type="submit">Log in</button>
+        </a>
+    </div>
+    <div class="body-container">
+        <form action="submit">
+        <label for="uname">Username</label>
+        <input type="text" placeholder="enter email of username"/>
+        <label for="pass">Password</label>
+        <input type="password" placeholder="enter your password" />
+        <button type="submit">Login<i class="fa-solid fa-arrow-right"></i></button>
+        </form>
+    </div>
+</body>
+</html>

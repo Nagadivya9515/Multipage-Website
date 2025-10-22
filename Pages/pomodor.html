@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="./pomodoro.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="header">
+        <div class="left-logo">
+            <img src="../techdialog-3.jpg" alt="" id="logo" />
+        </div>
+        <div class="right-titles">
+            <ul>
+                <li id="home"><a href="../index.html">Home</a></li>
+                <li id="clock"><a href="./digitalclock.html">Clock</a></li>
+                <li id="timer"><a href="./timer.html">Timer</a></li>
+                <li id="pomodoro"><a href="./pomodor.html">Pomodoro</a></li>
+                <li id="timeline"><a href="./timeline.html">Timeline</a></li>
+            </ul>
+        </div>
+        <a href="./login.html">
+        <button id="login" type="submit">Log in</button>
+        </a>
+    </div>
+    <div class="pomodoro">
+    <div class="container">
+      <div class="ask" id="ask">
+        <span id="lable">
+          <label for="inputTime">Enter Timer :</label>
+        </span>
+        <input type="number" placeholder="(in mins)" id="inputTime" value="" />
+        <button id="setTimer" onclick="updateTimer()">Set</button>
+      </div>
+      <div class="timer" id="timer">
+        <h2 id="displayTime">00:00</h2>
+      </div>
+      <div class="buttons">
+        <button id="start" onclick="watchStart()">Start</button>
+        <button id="stop" onclick="watchStop()">Stop</button>
+        <button id="reset" onclick="watchReset()">Reset</button>
+      </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
